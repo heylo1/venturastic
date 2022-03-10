@@ -1,0 +1,41 @@
+.introcard {
+    max-width: 393px;
+}
+
+.introcard__greeting {
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: var(--font-montserrat);
+    font-size: 11px;
+    line-height: 16px;
+    color: #009CC4;
+}
+
+.introcard__title {
+    margin-bottom: 38px;
+    font-family: var(--font-unna);
+    font-size: 52px;
+    line-height: 49px;
+    color: #313335;
+}
+.introcard__text {
+    margin-bottom: 50px;
+    font-family: var(--font-pt);
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+    position: relative;
+    padding-left: 42px;
+}
+
+.introcard__text::before {
+    top: 0;
+    left: 0;
+    content: '';
+    height: 66px;
+    width: 2px;
+    background: #009CC4;
+    display: inline-block;
+    position: absolute;
+}

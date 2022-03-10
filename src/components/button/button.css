@@ -1,0 +1,18 @@
+.button {
+    border: 1px solid #009CC4;
+    height: 55px;
+    width: 197px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #009CC4;
+}

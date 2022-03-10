@@ -1,0 +1,10 @@
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 128px 0;
+}
+
+.introduction__picture {
+    width: 485px;
+}
