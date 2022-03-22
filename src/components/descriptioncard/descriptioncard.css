@@ -1,0 +1,41 @@
+.descriptioncard {
+    font-family: var(--font-unna);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 75px 25px;
+}
+
+.descriptioncard-dark {
+    background: #F3F0E9;
+}
+
+.descriptioncard__header {
+    display: flex;
+    margin-bottom: 35px;
+    max-width: 350px;
+    justify-content: space-between;
+}
+
+.descriptioncard__number {
+    font-size: 62px;
+    line-height: 50px;
+    color: #009CC4;
+}
+
+.descriptioncard__title {
+    font-size: 28px;
+    line-height: 32px;
+    color: #313335;
+    max-width: 180px;
+}
+
+.descriptioncard__text {
+    font-family: var(--font-pt);
+    font-size: 14px;
+    line-height: 22px;
+    color: #808080;
+    max-width: 350px;
+}

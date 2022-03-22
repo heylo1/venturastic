@@ -1,11 +1,13 @@
 import React from 'react';
 import './header.css';
 
-function Header() {
+function Header(props) {
     return (
-        <div className='header'>
-            <h1 className='header__title'>A special purpose investment company</h1>
-            <h2 className='header__description'>You invest in our deep domain expertise</h2>
+        <div className='header' style={{ backgroundImage: `url(${props.image})` }}>
+            <div className='header__text'>
+                <h1 className='header__text__title'>{props.title}</h1>
+                <h2 className='header__text__description'>{props.description}</h2>
+            </div>
         </div>
     )
 }

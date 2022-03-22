@@ -1,19 +1,24 @@
 import React from 'react';
 
-// import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
-import { Navbar, Header, Introduction, CardContainer } from './components';
+import { Navbar, Footer} from './components';
+import { Home, WouldDo } from './pages';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import Introdction from './components/introduction/Introduction';
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <Header />
-            <Introduction />
-            <CardContainer />
-            {/* <Footer /> */}
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/woulddo" element={<WouldDo />} />
+                </Routes>
+            </BrowserRouter>
+
+            <Footer />
         </div>
     )
 }

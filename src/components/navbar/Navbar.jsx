@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import './navbar.css';
-// import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 
 const Menu = () => (
     <>
-    <p className='navbar__links-active'><a href="#home">Home</a></p>
-    <p><a href="#wgpt3">What we would do</a></p>
-    <p><a href="#possibility">Corporate governance</a></p>
-    <p><a href="#features">First project</a></p>
-    <p><a href="#blog">About us</a></p>
-    <p><a href="#blog">Our team</a></p>
+    <a href="/" className='navbar__links-active'>Home</a>
+    <a href="/woulddo">What we would do</a>
+    <a href="#possibility">Corporate governance</a>
+    <a href="#features">First project</a>
+    <a href="#blog">About us</a>
+    <a href="#blog">Our team</a>
     </>
 )
 
@@ -24,6 +24,20 @@ function Navbar() {
             </div>
             <div className="navbar__links">
                 <Menu />
+            </div>
+
+            <div className='navbar__mobile'>
+                {toggleMenu
+                        ? <RiCloseLine color='#000' size={27} onClick={()=> setToggleMenu(false)} />
+                        : <RiMenu3Line color='#000' size={27} onClick={()=> setToggleMenu(true)} />
+                    }
+                    {toggleMenu && (
+                        
+                            <div className='navbar__mobile-links'>
+                                <Menu />
+                            </div>
+                        
+                    )}
             </div>
         </div>
     )

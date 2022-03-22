@@ -1,0 +1,13 @@
+.IconListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+}
+
+.IconListItem__title {
+    font-family: var(--font-unna);
+    font-size: 21px;
+    line-height: 32px;
+    max-width: 305px;
+    margin-left: 43px;
+}

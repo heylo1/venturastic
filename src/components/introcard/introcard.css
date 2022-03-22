@@ -39,3 +39,16 @@
     display: inline-block;
     position: absolute;
 }
+
+@media screen and (max-width: 500px) {
+    .introcard__title {
+        font-size: 42px;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .introcard__title {
+        font-size: 32px;
+    }
+}

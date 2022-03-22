@@ -1,0 +1,66 @@
+.TeamIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F3F0E9;
+    padding: 0 50px 63px;
+}
+
+.TeamIntro__greating {
+    margin-bottom: 16px;
+    margin-top: 63px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: var(--font-montserrat);
+    font-size: 11px;
+    line-height: 16px;
+    color: #009CC4;
+}
+
+.TeamIntro__title {
+    font-family: var(--font-unna);
+    font-size: 53px;
+    line-height: 58px;
+    max-width: 930px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.TeamIntro__text {
+    font-family: var(--font-pt);
+    font-size: 26px;
+    line-height: 41px;
+    letter-spacing: 1px;
+    max-width: 1085px;
+    text-align: center;
+    color: #696767;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .TeamIntro__title {
+        font-size: 39px;
+        line-height: 34px;
+    }
+    
+    .TeamIntro__text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .TeamIntro {
+        padding: 0 25px 63px;
+    }
+
+    .TeamIntro__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .TeamIntro__text {
+        margin-bottom: 25px;
+    }
+}

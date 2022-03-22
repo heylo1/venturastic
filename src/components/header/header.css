@@ -1,31 +1,55 @@
 .header {
-    position: relative;
-    height: 661px;
-    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 560px;
     color: #FFFFFF;
-    background: linear-gradient(rgba(24, 24, 24, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/city.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.header__title {
-    position: absolute;
-    top: 305px;
-    left: 729px;
-    width: 752px;
+.header__text {
+    max-width: 800px;
     text-transform: uppercase;
+}
+
+.header__text__title {
     font-family: var(--font-unna);
     font-size: 62px;
     line-height: 74px;
 }
 
-.header__description {
-    position: absolute;
-    top: 493px;
-    left: 729px;
+.header__text__description {
     font-family: var(--font-pt);
     font-size: 36px;
     line-height: 59px;
+}
+
+@media screen and (max-width: 992px) {
+    .header__text{
+        text-align: center;
+    }
+
+    .header__text__title {
+        font-size: 48px;
+    }
+    
+    .header__text__description {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header__text__title {
+        font-size: 34px;
+        line-height: 1;
+        padding-bottom: 20px;
+    }
+    
+    .header__text__description {
+        font-size: 18px;
+        line-height: 1;
+    }
 }

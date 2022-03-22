@@ -4,9 +4,7 @@ import './button.css';
 function Button(props) {
 
     return (
-        <div className='button'>
-            <p className="button__text">{props.text}</p>
-        </div>
+        <div className='button'>{props.btnText}</div>
     )
 }
 

@@ -3,23 +3,125 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 0;
-    width: 1440px;
+    padding: 13px 25px;
     margin: 0 auto;
-}
-
-.navbar__links {
-    display: flex;
+    background: #ffffff;
+    width: 100%;
+    z-index: 2;
     font-size: 16px;
     letter-spacing: 0.85px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-.navbar__links p {
-    padding: 0 20px;
+.navbar__links {
+    display: flex;
+}
+
+.navbar__links a {
+    padding: 5px 20px;
+    position: relative;
+    text-decoration: none;
+}
+
+
+
+.navbar__links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1.2px;
+    border-radius: 4px;
+    background-color: #009CC4;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navbar__links a:hover::before {
+transform-origin: left;
+transform: scaleX(1);
 }
 
 .navbar__links-active {
     color: #009CC4;
+}
+
+.navbar__mobile {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.navbar__mobile-links {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    padding-bottom: 30px;
+    animation: fadeIn .5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+  }
+  
+  .menu--close {
+    animation: fadeOut 0.2s ease-in-out;
+  }
+
+.navbar__mobile-links a {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 1260px) {
+    .navbar__links a {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .navbar__links a {
+        display: none;
+    }
+
+    .navbar__mobile {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .navbar__mobile-links {
+        font-size: 16px;
+    }
 }

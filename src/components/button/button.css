@@ -5,9 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.button__text {
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 12px;
@@ -15,4 +13,10 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #009CC4;
+}
+
+.button:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #009CC4;
+    cursor: pointer;
 }
