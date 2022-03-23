@@ -1,0 +1,14 @@
+.AboutUs {}
+
+.aboutus__articles {
+    display: flex;
+    padding: 100px 130px;
+}
+
+.aboutus__articles div {
+    padding: 0 8px;
+}
+
+.aboutus__articles-second {
+    margin-top: 40px;
+}

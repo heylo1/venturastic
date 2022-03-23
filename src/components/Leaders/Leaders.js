@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Leaders.css';
 import IntroCard from '../introcard/IntroCard';
 import IconList from '../IconList/IconList';
@@ -23,9 +22,5 @@ const Leaders = () => (
     <IconList icons={icons} />
   </div>
 );
-
-Leaders.propTypes = {};
-
-Leaders.defaultProps = {};
 
 export default Leaders;

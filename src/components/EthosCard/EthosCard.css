@@ -1,0 +1,41 @@
+.EthosCard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 230px;
+}
+
+.ethoscard__icon {
+    background: #009CC4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.ethoscard__title {
+    font-size: 26px;
+    font-family: var(--font-pt);
+    color: #4D4D4D;
+    font-weight: 400;
+    height: 70px;
+    text-align: center;
+}
+
+.ethoscard__text::before {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #009CC4;
+    margin: 10px auto 16px;
+}
+
+.ethoscard__text {
+    font-size: 14px;
+    font-family: var(--font-pt);
+    color: #696767;
+}

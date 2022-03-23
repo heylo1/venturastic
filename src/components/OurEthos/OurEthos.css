@@ -1,0 +1,18 @@
+.OurEthos {
+    background: #F3F0E9;
+    padding: 100px 130px;
+}
+
+.ourethos__title {
+    color: #4D4D4D;
+    font-size: 52px;
+    font-family: var(--font-unna);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.ourethos__cardscontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

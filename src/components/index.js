@@ -5,3 +5,8 @@ export { default as CardContainer } from './cardcontainer/CardContainer';
 export { default as Leaders } from './Leaders/Leaders';
 export { default as TeamIntro } from './TeamIntro/TeamIntro';
 export { default as Footer } from './Footer/Footer';
+export { default as Article } from './Article/Article';
+export { default as PhotoArticle } from './PhotoArticle/PhotoArticle';
+export { default as Tenets } from './Tenets/Tenets';
+export { default as CoreInvestments } from './CoreInvestments/CoreInvestments';
+export { default as OurEthos } from './OurEthos/OurEthos';

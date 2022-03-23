@@ -1,0 +1,32 @@
+.tenets__image{
+    position: relative;
+}
+
+.tennets__image-title {
+    background:rgba(255,255,255, 0.75);
+    font-family: var(--font-unna);
+    font-size: 36px;
+    padding: 13px 30px;
+    position: absolute;
+    bottom: 73px;
+    left: 160px;
+    color: #4D4D4D;
+}
+.tenets__list {
+    font-family: var(--font-pt);
+    display: flex;
+    padding: 40px 130px 100px;
+    justify-content: space-between;
+}
+
+.tenets__list-title {
+    color: #009DC4;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.tenets__list-text {
+    font-size: 16px;
+    max-width: 160px;
+}
