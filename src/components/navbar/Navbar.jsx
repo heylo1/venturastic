@@ -7,6 +7,7 @@ const Menu = () => (
     <>
     <a href="/" className='navbar__links-active'>Home</a>
     <a href="/woulddo">What we would do</a>
+    <a href="/firstproject">First project</a>
     <a href="/corporate-governance">Corporate governance</a>
     <a href="/aboutus">About us</a>
     <a href="/ourteam">Our team</a>
