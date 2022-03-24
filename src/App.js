@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Navbar, Footer} from './components';
-import { Home, WouldDo, Corporate, AboutUs } from './pages';
+import { Home, WouldDo, Corporate, AboutUs, OurTeam } from './pages';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
@@ -17,6 +17,7 @@ function App() {
                     <Route path="/woulddo" element={<WouldDo />} />
                     <Route path="/corporate-governance" element={<Corporate />} />
                     <Route path="/aboutus" element={<AboutUs />} />
+                    <Route path="/ourteam" element={<OurTeam />} />
                 </Routes>
             </BrowserRouter>
 

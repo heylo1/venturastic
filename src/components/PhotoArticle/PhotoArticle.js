@@ -10,7 +10,7 @@ const PhotoArticle = (props) => (
       <img src={props.photo} />
     </div>
     
-      <Article withHeader = {props.withHeader} title={props.title} text={props.text}/>
+      <Article withHeader = {props.withHeader} title={props.title} name={props.name} job={props.job} text={props.text}/>
   </div>
 );
 

@@ -9,7 +9,7 @@ const Home = () => (
     <Introduction />
     <CardContainer />
     <Leaders />
-    <TeamIntro />
+    <TeamIntro withButton />
   </div>
 );
 
