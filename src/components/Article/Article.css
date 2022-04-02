@@ -1,3 +1,7 @@
+.section {
+    padding: 100px 25px;
+}
+
 .article__title {
     font-family: var(--font-unna);
     font-size: 36px;
@@ -37,4 +41,16 @@
     background: #009CC4;
     display: inline-block;
     position: absolute;
+}
+
+@media screen and (max-width: 500px) {
+    .article__title {
+        font-size: 26px;
+        line-height: 1;
+    }
+
+    .article__text-paragraph-withHeader:first-child {
+        font-size: 20px;
+        line-height: 1;
+    }
 }

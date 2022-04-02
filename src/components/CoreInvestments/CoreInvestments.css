@@ -14,22 +14,12 @@
 }
 
 .coreInvestments__header {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    padding: 0 150px;
-}
-
-.coreInvestments__header-text {
-    width: 230px;
-    text-align: center;
-    margin-top: 110px;
-    padding-left: 25px;
+    justify-content: center;
 }
 
 .coreInvestments__header-image {
-    position: absolute;
-    width: 50%;
+    width: 40%;
 }
 
 .coreInvestments__header-image img{
@@ -51,4 +41,17 @@
 
 .coreInvestments__articles-second {
     margin-top: 40px;
+}
+
+@media screen and (max-width: 1180px) {
+    .coreInvestments__articles {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .CoreInvestments {
+        padding: 60px 40px 100px;
+    }
 }

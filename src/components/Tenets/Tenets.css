@@ -1,5 +1,10 @@
 .tenets__image{
     position: relative;
+    width: 100%;
+}
+
+.tenets__image img {
+    width: 100%;
 }
 
 .tennets__image-title {
@@ -29,4 +34,43 @@
 .tenets__list-text {
     font-size: 16px;
     max-width: 160px;
+}
+
+@media screen and (max-width: 1180px) {
+    .tenets__list {
+        padding: 40px 60px 100px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .tennets__image-title {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        height: 65px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .tenets__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tenets__list-text {
+        font-size: 16px;
+        max-width: 480px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .tennets__image-title {
+        font-size: 28px;
+        width: 260px;
+    }
 }

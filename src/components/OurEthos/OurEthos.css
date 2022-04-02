@@ -16,3 +16,18 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1200px) {
+    .ourethos__cardscontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourethos__title {
+        color: #4D4D4D;
+        font-size: 52px;
+        font-family: var(--font-unna);
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

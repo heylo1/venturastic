@@ -26,9 +26,7 @@ const CoreInvestments = () => (
 
     <div className='coreInvestments__header'>
       <div className='coreInvestments__header-image'><img src={firstS} /></div>
-      <div className='coreInvestments__header-text'>Companies where we have the ability to improve performance</div>
-      <div className='coreInvestments__header-text'>Leverage successful business models and innovation abroad</div>
-      <div className='coreInvestments__header-text'>Help brands expand in Asia, Mena and Latin America to meet the needs of an emerging middle class with increased purchasing power</div>
+      
       <div className='coreInvestments__header-image'><img src={secondS} /></div>
     </div>
     

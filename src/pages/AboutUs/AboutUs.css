@@ -12,3 +12,16 @@
 .aboutus__articles-second {
     margin-top: 40px;
 }
+
+@media screen and (max-width: 1180px) {
+    .aboutus__articles {
+        padding: 100px 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .aboutus__articles {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+}

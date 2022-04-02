@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 65px;
+    margin-bottom: 35px;
 }
 
 .ethoscard__title {
@@ -38,4 +38,25 @@
     font-size: 14px;
     font-family: var(--font-pt);
     color: #696767;
+}
+
+@media screen and (max-width: 1200px) {
+    .EthosCard {
+        max-width: 480px;
+        margin-bottom: 60px;
+    }
+
+    .ethoscard__text {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ethoscard__icon {
+        margin-bottom: 15px;
+    }
+
+    .ethoscard__title {
+        font-size: 28px;
+        height: 45px;
+    }
 }
